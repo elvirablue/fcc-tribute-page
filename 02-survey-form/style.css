@@ -1,0 +1,83 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkorange: chocolate;
+  --color-darkorange-alpha: rgba(210, 105, 30, 0.8);
+  --color-green: #37af65;
+  --color-text: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-text);
+  margin: 0;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkorange);
+  background-image: linear-gradient(
+      115deg,
+      rgba(118,107,99, 0.8),
+      rgba(232,176,136, 0.7)
+  ),
+  url("https://s9.travelask.ru/uploads/post/000/015/687/main_image/full-621772ed26a85e70384926e2cfe644dc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+    max-width: 550px;
+    padding: 0;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+    list-style: none;
+}
+
+li {
+    margin: 16px 0;
+}
+
+li:before {
+    content: "\2022";
+    display: inline-block;
+    padding-right: 0.25em;
+    color: orange;
+    font-size: 1.5rem;
+}
+
+#tribute-link {
+    color: chocolate;
+    text-decoration: none;
+}
+#tribute-link:hover {
+    text-decoration: underline overline chocolate;
+}
+
+blockquote {
+    padding: 32px;
+    background-color: bisque;
+}
+
